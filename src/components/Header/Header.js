@@ -2,8 +2,11 @@ import "./Header.css";
 
 function Header() {
   return (
-    <header>
-      <h1>Eeny, meeny, YARNy, moe</h1>
+    <header className="header">
+      <div className="header__titles">
+        <h1 className="header__title">MadeW/Love</h1>
+        <p className="header__subtitle">Your random fiber craft inspo </p>
+      </div>
     </header>
   );
 }

@@ -1,0 +1,15 @@
+.Main {
+  margin: 0;
+  padding: 0 5%;
+  background: repeating-linear-gradient(
+    180deg,
+    #48c8c4,
+    #48c8c4 0.3px,
+    #faf0e6 3px,
+    #faf0e6 30px
+  );
+  line-height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}

@@ -1,0 +1,33 @@
+.header {
+  /* background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 10%;
+  height: 65px; */
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 0 0 auto;
+}
+.header__titles {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  /* width: 250px; */
+  align-self: center;
+  margin: 3% 1%;
+}
+.header__title {
+  /* font-family: ; */
+  margin: 0;
+  text-align: left;
+  width: fit-content;
+  align-self: flex-start;
+}
+.header__subtitle {
+  margin: 0;
+  text-align: right;
+  width: fit-content;
+  align-self: flex-end;
+}

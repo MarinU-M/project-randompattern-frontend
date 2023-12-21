@@ -7,7 +7,7 @@ import About from "../About/About";
 
 function Main() {
   return (
-    <main>
+    <main className="Main">
       <Routes>
         <Route exact path="/" element={<PatternButton />} />
         <Route path="/randompattern" element={<RandomPattern />} />

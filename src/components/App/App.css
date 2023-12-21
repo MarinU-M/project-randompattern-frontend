@@ -1,13 +1,13 @@
 @import url(../../vendor/fonts.css);
 
 .App {
-  text-align: center;
-  font-family: "Edu TAS Beginner";
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  font-family: "Edu TAS Beginner", cursive;
+  min-width: 1100px;
+  max-width: 1600px;
+  background-color: #faf0e6;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
