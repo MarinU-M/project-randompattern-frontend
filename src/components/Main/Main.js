@@ -9,8 +9,8 @@ function Main() {
   return (
     <main className="Main">
       <Routes>
-        <Route exact path="/" element={<PatternButton />} />
-        <Route path="/randompattern" element={<RandomPattern />} />
+        {/* <Route exact path="/" element={<PatternButton />} /> */}
+        <Route exact path="/randompattern" element={<RandomPattern />} />
       </Routes>
 
       <About />

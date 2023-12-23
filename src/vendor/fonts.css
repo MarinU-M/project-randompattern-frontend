@@ -21,3 +21,11 @@
   font-display: swap;
   src: url("./fonts/NotoSans-VariableFont_wdth\,wght.ttf") format("truetype");
 }
+
+@font-face {
+  font-family: "Pacifico", cursive;
+  font-style: normal;
+  font-weight: bold;
+  font-display: swap;
+  src: url("./fonts/Pacifico-Regular.ttf") format("truetype");
+}
