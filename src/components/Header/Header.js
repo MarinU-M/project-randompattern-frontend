@@ -1,4 +1,5 @@
 import "./Header.css";
+import Navigation from "../Navigation/Navigation";
 
 function Header() {
   return (
@@ -7,6 +8,7 @@ function Header() {
         <h1 className="header__title">MadeWithLove</h1>
         <p className="header__subtitle">Your random fiber craft inspo </p>
       </div>
+      <Navigation />
     </header>
   );
 }
