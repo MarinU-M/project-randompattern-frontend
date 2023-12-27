@@ -23,8 +23,12 @@
   font-family: "Pacifico", cursive;
   margin: 0;
   text-align: left;
+  font-size: 48px;
   width: fit-content;
   align-self: center;
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
 }
 .header__subtitle {
   margin: 0;

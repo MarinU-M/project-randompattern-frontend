@@ -1,18 +1,20 @@
 import "./Navigation.css";
+import { Link } from "react-router-dom";
 
 function Navigation() {
   return (
     <nav className="Navigation">
       <ul className="Navigation__list">
         <li className="Navigation__list-item">
-          <a className="Navigation__link" href="#Inspo">
+          <Link to="/#Inspo" className="Navigation__link">
             Inspo
-          </a>
+          </Link>
         </li>
+
         <li className="Navigation__list-item">
-          <a className="Navigation__link" href="#About">
+          <Link to="/#About" className="Navigation__link">
             About
-          </a>
+          </Link>
         </li>
       </ul>
     </nav>
