@@ -1,0 +1,23 @@
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0 0 0 100px;
+}
+
+.footer__copyright {
+  margin: 0;
+  align-self: center;
+}
+
+.footer__links {
+  list-style-type: none;
+  display: flex;
+  gap: 50px;
+}
+
+.footer__link-image {
+  width: 50px;
+  height: 50px;
+}
