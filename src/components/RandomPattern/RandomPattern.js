@@ -1,7 +1,11 @@
 import "./RandomPattern.css";
 
 function RandomPattern() {
-  return <section>and this is RandomPattern</section>;
+  return (
+    <section className="RandomPattern">
+      <h2>and this is RandomPattern</h2>
+    </section>
+  );
 }
 
 export default RandomPattern;

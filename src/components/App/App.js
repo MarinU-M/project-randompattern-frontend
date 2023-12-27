@@ -12,6 +12,7 @@ function App() {
   getPatterns()
     .then((res) => console.log(res))
     .catch(console.error);
+
   return (
     <div className="App">
       <Header />
