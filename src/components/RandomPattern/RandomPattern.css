@@ -22,3 +22,43 @@
   gap: 10px;
   flex-direction: row;
 }
+
+@media screen and (max-width: 850px) {
+  .RandomPattern {
+    width: 780px;
+    margin: 80px auto 0;
+    border-bottom: 2px dashed #000;
+  }
+
+  .RandomPattern__title {
+    font-size: 35px;
+    width: fit-content;
+    margin: 30px auto 30px;
+  }
+
+  .RandomPattern__cards {
+    margin: 20px auto;
+    gap: 35px;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .RandomPattern {
+    width: 395px;
+    margin: 70px auto 0;
+    border-bottom: 2px dashed #000;
+  }
+
+  .RandomPattern__title {
+    font-size: 24px;
+    width: fit-content;
+    margin: 30px auto 20px;
+  }
+
+  .RandomPattern__cards {
+    margin: 20px auto;
+    gap: 35px;
+    flex-direction: column;
+  }
+}
