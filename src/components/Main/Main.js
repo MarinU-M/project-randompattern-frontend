@@ -5,19 +5,18 @@ import crocheting from "../../images/crocheting.jpg";
 import knitting from "../../images/knitting.jpg";
 import yarnball from "../../images/yarnball.svg";
 
-function Main() {
+function Main({ onRandom, onClick }) {
   // choose random image
   const images = [crocheting, knitting, yarnball];
-  const randomIndex = Math.floor(Math.random() * images.length);
-  const randomImage = images[randomIndex];
+  const randomImage = onRandom(images, 1);
 
   return (
-    <section className="PatternButton">
+    <section className="PatternButton" id="Inspo">
       <div className="PatternButton__images">
         <span className="PatternButton__tape"></span>
         <img
           className="PatternButton__img"
-          src={randomImage}
+          src={randomImage[0]}
           alt="Random craft"
         />
       </div>
@@ -35,7 +34,11 @@ function Main() {
           tool to find your next knitting or crocheting inspo.
         </p>
 
-        <Link to="/randompattern" className="PatternButton__btn">
+        <Link
+          to="/randompattern"
+          className="PatternButton__btn"
+          onClick={onClick}
+        >
           Need inspo?
         </Link>
       </div>

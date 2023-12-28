@@ -1,20 +1,21 @@
 import "./Navigation.css";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 function Navigation() {
   return (
     <nav className="Navigation">
       <ul className="Navigation__list">
         <li className="Navigation__list-item">
-          <Link to="/#Inspo" className="Navigation__link">
+          <HashLink to="/#Inspo" className="Navigation__link">
             Inspo
-          </Link>
+          </HashLink>
         </li>
 
         <li className="Navigation__list-item">
-          <Link to="/#About" className="Navigation__link">
+          <HashLink to="/#About" className="Navigation__link">
             About
-          </Link>
+          </HashLink>
         </li>
       </ul>
     </nav>

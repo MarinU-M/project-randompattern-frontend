@@ -3,8 +3,8 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  width: 90%;
-  margin: 100px auto;
+  width: 1300px;
+  margin: 0 auto;
   border-bottom: 3px dashed #000;
 }
 .PatternButton__images {

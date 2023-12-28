@@ -1,0 +1,24 @@
+.RandomPattern {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 1300px;
+  margin: 0 auto;
+  border-bottom: 3px dashed #000;
+}
+
+.RandomPattern__title {
+  font-size: 40px;
+  width: fit-content;
+  margin: 30px auto 30px 30px;
+}
+
+.RandomPattern__cards {
+  list-style-type: none;
+  margin: 30px auto;
+  padding: 0;
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
+}
