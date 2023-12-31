@@ -1,19 +1,20 @@
 import "./RandomPattern.css";
 import PatternCard from "../PatternCard/PatternCard";
 
-function RandomPattern() {
+function RandomPattern({ items, onRandom, onClick }) {
+  const randomPatterns = onRandom(items, 3);
+  console.log(randomPatterns);
+
   return (
     <section className="RandomPattern">
       <h2 className="RandomPattern__title">
         How about these for your next project?
       </h2>
       <ul className="RandomPattern__cards">
-        {/* {items.map((card) => ( */}
-        <PatternCard />
-        <PatternCard />
-        <PatternCard />
-        {/* key={card._id} item={card} */}
-        {/* ))} */}
+        {randomPatterns.map((card) => (
+          // console.log(card)
+          <PatternCard key={card._id} item={card} onClick={onClick} />
+        ))}
       </ul>
     </section>
   );

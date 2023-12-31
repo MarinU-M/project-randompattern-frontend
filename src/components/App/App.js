@@ -8,10 +8,13 @@ import RandomPattern from "../RandomPattern/RandomPattern";
 import About from "../About/About";
 import Footer from "../Footer/Footer";
 import Preloader from "../Preloader/Preloader";
-// import { getPatterns } from "../../utils/api";
+import CardModal from "../CardModal/CardModal";
+import { getPatterns } from "../../utils/api";
 
 function App() {
-  // const [items, setItems] = useState([]);
+  const [items, setItems] = useState([]);
+  const [activeModal, setActiveModal] = useState("");
+  const [selectedCard, setSelectedCard] = useState({});
 
   const createRandomList = (array, num) => {
     let newArray = [];
@@ -23,16 +26,24 @@ function App() {
     return newArray;
   };
 
-  // const getRandomPatterns = () => {
-  //   getPatterns()
-  //     .then((res) => {
-  //       const { patterns } = res;
-  //       setItems(patterns);
-  //       const array = createRandomList(items, 3);
-  //       console.log(array);
-  //     })
-  //     .catch(console.error);
-  // };
+  const handleSelectedCard = (card) => {
+    setActiveModal("preview");
+    setSelectedCard(card);
+  };
+
+  const handleCloseModal = () => {
+    setActiveModal("");
+  };
+
+  // get pattern list
+  useEffect(() => {
+    getPatterns()
+      .then((res) => {
+        const { patterns } = res;
+        setItems(patterns);
+      })
+      .catch(console.error);
+  }, []);
 
   return (
     <div className="App">
@@ -40,17 +51,22 @@ function App() {
       <Switch>
         <Route exact path="/">
           <Main onRandom={createRandomList} />
-          {/* onClick={getRandomPatterns} */}
         </Route>
         <Route path="/randompattern">
-          <RandomPattern />
-          {/* items={items} */}
+          <RandomPattern
+            onClick={handleSelectedCard}
+            items={items}
+            onRandom={createRandomList}
+          />
         </Route>
       </Switch>
 
       <About />
       <Footer />
       {/* <Preloader /> */}
+      {activeModal === "preview" && (
+        <CardModal selectedCard={selectedCard} onClose={handleCloseModal} />
+      )}
     </div>
   );
 }

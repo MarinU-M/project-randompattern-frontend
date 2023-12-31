@@ -1,15 +1,22 @@
 import "./PatternCard.css";
 
-function PatternCard(card) {
+function PatternCard({ card, onClick }) {
+  const { item } = card;
+  const name = item.name;
+  const photo = item.first_photo.medium2_url;
+  const query = item.permalink;
+  const link = `https://www.ravelry.com/patterns/library/${query}`;
+
   return (
     <li className="PatternCard">
       <span className="PatternCard__tape"></span>
       <img
         className="PatternCard__img"
         alt="Pattern"
-        src="https://images.pexels.com/photos/3732881/pexels-photo-3732881.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        src={photo}
+        onClick={() => onClick({ name, photo, link })}
       />
-      <p className="PatternCard__title">some random pattern</p>
+      <p className="PatternCard__title">{name}</p>
     </li>
   );
 }
