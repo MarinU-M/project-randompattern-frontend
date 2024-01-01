@@ -1,10 +1,9 @@
 import "./PatternCard.css";
 
 function PatternCard({ card, onClick }) {
-  const { item } = card;
-  const name = item.name;
-  const photo = item.first_photo.medium2_url;
-  const query = item.permalink;
+  const name = card.name;
+  const photo = card.first_photo.medium2_url;
+  const query = card.permalink;
   const link = `https://www.ravelry.com/patterns/library/${query}`;
 
   return (

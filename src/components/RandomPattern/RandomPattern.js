@@ -13,7 +13,7 @@ function RandomPattern({ items, onRandom, onClick }) {
       <ul className="RandomPattern__cards">
         {randomPatterns.map((card) => (
           // console.log(card)
-          <PatternCard key={card._id} item={card} onClick={onClick} />
+          <PatternCard key={card._id} card={card} onClick={onClick} />
         ))}
       </ul>
     </section>

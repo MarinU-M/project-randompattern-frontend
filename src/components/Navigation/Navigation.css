@@ -50,6 +50,9 @@
   transition: right 0.5s ease-in 0.2s, top 0.5s ease-in 0.2s;
 }
 
+.Navigation__list-item_Ravelry {
+  background-color: pink;
+}
 .Navigation__link {
   text-decoration: none;
   color: black;

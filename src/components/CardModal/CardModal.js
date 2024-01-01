@@ -1,4 +1,5 @@
 import "./CardModal.css";
+import close from "../../images/close.svg";
 
 function CardModal({ selectedCard, onClose }) {
   const { name, photo, link } = selectedCard;
@@ -9,19 +10,19 @@ function CardModal({ selectedCard, onClose }) {
         className="CardModal__content"
         onClick={(evt) => evt.stopPropagation()}
       >
-        <button
-          className="CardModal__close"
-          type="button"
-          onClick={onClose}
-        ></button>
+        <button className="CardModal__close" type="button" onClick={onClose}>
+          <img src={close} alt="close button" />
+        </button>
         <img className="CardModal__image" src={photo} alt={name} />
 
-        <p className="modal__description">
-          <span>{name}</span>
-          <span>
-            <a href={link}>Learn more</a>
+        <div className="CardModal__description">
+          <p className="CardModal__title">{name}</p>
+          <span className="CardModal__shadow">
+            <a className="CardModal__link" href={link}>
+              Learn more
+            </a>
           </span>
-        </p>
+        </div>
       </div>
     </div>
   );

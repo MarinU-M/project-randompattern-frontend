@@ -7,15 +7,14 @@ function Navigation() {
     <nav className="Navigation">
       <ul className="Navigation__list">
         <li className="Navigation__list-item">
-          <HashLink to="/#Inspo" className="Navigation__link">
-            Inspo
-          </HashLink>
-        </li>
-
-        <li className="Navigation__list-item">
           <HashLink to="/#About" className="Navigation__link">
             About
           </HashLink>
+        </li>
+        <li className="Navigation__list-item Navigation__list-item_Ravelry">
+          <Link to="https://www.ravelry.com/" className="Navigation__link">
+            Ravelry (External service)
+          </Link>
         </li>
       </ul>
     </nav>
