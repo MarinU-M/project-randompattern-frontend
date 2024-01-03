@@ -32,6 +32,16 @@
   justify-self: center;
 }
 
+.About__link {
+  text-decoration: none;
+  color: #000;
+  background: linear-gradient(transparent 50%, rgba(245, 124, 100, 0.4) 0%);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: 100%;
+  cursor: pointer;
+}
+
 @media screen and (max-width: 850px) {
   .About {
     width: 780px;

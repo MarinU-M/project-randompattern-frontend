@@ -7,7 +7,7 @@ import Main from "../Main/Main";
 import RandomPattern from "../RandomPattern/RandomPattern";
 import About from "../About/About";
 import Footer from "../Footer/Footer";
-import Preloader from "../Preloader/Preloader";
+// import Preloader from "../Preloader/Preloader";
 import CardModal from "../CardModal/CardModal";
 import { getPatterns } from "../../utils/api";
 
