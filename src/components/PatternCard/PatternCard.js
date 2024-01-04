@@ -7,15 +7,15 @@ function PatternCard({ card, onClick }) {
   const link = `https://www.ravelry.com/patterns/library/${query}`;
 
   return (
-    <li className="PatternCard">
-      <span className="PatternCard__tape"></span>
+    <li className="pattern-card">
+      <span className="pattern-card__tape"></span>
       <img
-        className="PatternCard__img"
+        className="pattern-card__img"
         alt="Pattern"
         src={photo}
         onClick={() => onClick({ name, photo, link })}
       />
-      <p className="PatternCard__title">{name}</p>
+      <p className="pattern-card__title">{name}</p>
     </li>
   );
 }

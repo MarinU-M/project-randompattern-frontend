@@ -5,20 +5,20 @@ function CardModal({ selectedCard, onClose }) {
   const { name, photo, link } = selectedCard;
 
   return (
-    <div className="CardModal" onClick={onClose}>
+    <div className="card-modal" onClick={onClose}>
       <div
-        className="CardModal__content"
+        className="card-modal__content"
         onClick={(evt) => evt.stopPropagation()}
       >
-        <button className="CardModal__close" type="button" onClick={onClose}>
+        <button className="card-modal__close" type="button" onClick={onClose}>
           <img src={close} alt="close button" />
         </button>
-        <img className="CardModal__image" src={photo} alt={name} />
+        <img className="card-modal__image" src={photo} alt={name} />
 
-        <div className="CardModal__description">
-          <p className="CardModal__title">{name}</p>
-          <span className="CardModal__shadow">
-            <a className="CardModal__link" href={link}>
+        <div className="card-modal__description">
+          <p className="card-modal__title">{name}</p>
+          <span className="card-modal__shadow">
+            <a className="card-modal__link" href={link}>
               Learn more
             </a>
           </span>

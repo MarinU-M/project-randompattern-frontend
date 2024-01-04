@@ -11,24 +11,24 @@ function Main({ onRandom }) {
   const randomImage = onRandom(images, 1);
 
   return (
-    <section className="PatternButton" id="Inspo">
-      <div className="PatternButton__images">
-        <span className="PatternButton__tape"></span>
+    <section className="pattern-button" id="Inspo">
+      <div className="pattern-button__images">
+        <span className="pattern-button__tape"></span>
         <img
-          className="PatternButton__img"
+          className="pattern-button__img"
           src={randomImage[0]}
           alt="Random craft"
         />
       </div>
-      <div className="PatternButton__content">
-        <h2 className="PatternButton__title">
+      <div className="pattern-button__content">
+        <h2 className="pattern-button__title">
           Brand new idea for your next project
         </h2>
 
-        <h3 className="PatternButton__subtitle">
+        <h3 className="pattern-button__subtitle">
           "Sometimes running out of idea. Like, what do I make next?"
         </h3>
-        <p className="PatternButton__text">
+        <p className="pattern-button__text">
           I know, right? I'm in the same boat all the time. Scrolling Instagram
           and Pinterest but nothing tickles your fancy. That's why I made this
           tool to find your next knitting or crocheting inspo.
@@ -36,7 +36,7 @@ function Main({ onRandom }) {
 
         <Link
           to="/randompattern"
-          className="PatternButton__btn"
+          className="pattern-button__btn"
           // onClick={onClick}
         >
           Need inspo?

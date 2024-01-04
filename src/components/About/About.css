@@ -1,4 +1,4 @@
-.About {
+.about {
   width: 1300px;
   display: flex;
   flex-direction: row;
@@ -8,7 +8,7 @@
   padding: 100px 0;
 }
 
-.About__title {
+.about__title {
   font-size: 40px;
   width: fit-content;
   margin: 0 auto 40px 0;
@@ -16,7 +16,7 @@
   align-self: flex-start;
 }
 
-.About__img {
+.about__img {
   margin: 0;
   width: 300px;
   height: 300px;
@@ -25,14 +25,14 @@
   justify-self: center;
 }
 
-.About__text {
+.about__text {
   margin: 0;
   width: 700px;
   align-self: center;
   justify-self: center;
 }
 
-.About__link {
+.about__link {
   text-decoration: none;
   color: #000;
   background: linear-gradient(transparent 50%, rgba(245, 124, 100, 0.4) 0%);
@@ -43,7 +43,7 @@
 }
 
 @media screen and (max-width: 850px) {
-  .About {
+  .about {
     width: 780px;
     flex-direction: column;
     justify-content: center;
@@ -51,18 +51,18 @@
     border-bottom: 2px dashed #000;
     padding: 20px 0;
   }
-  .About__title {
+  .about__title {
     font-size: 35px;
     width: fit-content;
     margin: 0 auto 20px 0;
   }
-  .About__img {
+  .about__img {
     width: 250px;
     height: 250px;
     align-self: center;
     justify-self: center;
   }
-  .About__text {
+  .about__text {
     margin: 0 0 20px 0;
     width: 650px;
     align-self: center;
@@ -71,18 +71,18 @@
 }
 
 @media screen and (max-width: 400px) {
-  .About {
+  .about {
     width: 395px;
     padding: 15px 0;
   }
-  .About__title {
+  .about__title {
     font-size: 24px;
   }
-  .About__img {
+  .about__img {
     width: 200px;
     height: 200px;
   }
-  .About__text {
+  .about__text {
     margin: 0 0 20px 0;
     width: 350px;
     align-self: center;

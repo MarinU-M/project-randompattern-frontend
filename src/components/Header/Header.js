@@ -1,15 +1,15 @@
 import "./Header.css";
 import Navigation from "../Navigation/Navigation";
 
-import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 function Header() {
   return (
     <header className="header">
       <div className="header__titles">
-        <Link to="/" className="header__title">
+        <HashLink smooth to="/#Inspo" className="header__title">
           MadeWithLove
-        </Link>
+        </HashLink>
         <p className="header__subtitle">Your random fiber craft inspo </p>
       </div>
       <Navigation />

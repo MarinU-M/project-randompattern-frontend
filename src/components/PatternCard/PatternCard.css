@@ -1,4 +1,4 @@
-.PatternCard {
+.pattern-card {
   max-width: 360px;
   height: 400px;
   background-color: #fff;
@@ -10,12 +10,12 @@
   flex-direction: column;
 }
 
-.PatternCard__link {
+.pattern-card__link {
   text-decoration: none;
   color: #000;
 }
 
-.PatternCard__tape {
+.pattern-card__tape {
   position: absolute;
   top: -1em;
   left: 26%;
@@ -40,7 +40,7 @@
   transform: rotate(-4deg);
 }
 
-.PatternCard__img {
+.pattern-card__img {
   width: 300px;
   height: 300px;
   margin: 0;
@@ -49,17 +49,17 @@
 }
 
 @media screen and (max-width: 400px) {
-  .PatternCard {
+  .pattern-card {
     max-width: 340px;
     height: 380px;
     padding: 25px 25px 8px 25px;
   }
 
-  .PatternCard__img {
+  .pattern-card__img {
     width: 290px;
     height: 290px;
   }
-  .PatternCard__link {
+  .pattern-card__link {
     font-size: 16px;
   }
 }

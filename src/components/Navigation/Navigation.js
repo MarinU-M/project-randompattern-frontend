@@ -4,15 +4,20 @@ import { HashLink } from "react-router-hash-link";
 
 function Navigation() {
   return (
-    <nav className="Navigation">
-      <ul className="Navigation__list">
-        <li className="Navigation__list-item">
-          <HashLink to="/#About" className="Navigation__link">
+    <nav className="navigation">
+      <ul className="navigation__list">
+        <li className="navigation__list-item">
+          <HashLink smooth to="/#About" className="navigation__link">
             About
           </HashLink>
         </li>
-        <li className="Navigation__list-item Navigation__list-item_Ravelry">
-          <a href="https://www.ravelry.com/" className="Navigation__link">
+        <li className="navigation__list-item Navigation__list-item_Ravelry">
+          <a
+            href="https://www.ravelry.com/"
+            className="navigation__link"
+            target="_blank"
+            rel="noreferrer"
+          >
             Ravelry (External service)
           </a>
         </li>

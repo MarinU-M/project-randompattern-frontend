@@ -1,4 +1,4 @@
-.PatternButton {
+.pattern-button {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -7,7 +7,7 @@
   margin: 0 auto;
   border-bottom: 3px dashed #000;
 }
-.PatternButton__images {
+.pattern-button__images {
   position: relative;
   background: #fff;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
@@ -17,7 +17,7 @@
   padding: 0;
   border: 1px solid #000;
 }
-.PatternButton__tape {
+.pattern-button__tape {
   position: absolute;
   top: -1em;
   left: 26%;
@@ -42,12 +42,12 @@
   transform: rotate(-4deg);
 }
 
-.PatternButton__img {
+.pattern-button__img {
   width: 500px;
   height: 500px;
 }
 
-.PatternButton__content {
+.pattern-button__content {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -56,7 +56,7 @@
   margin: 0;
 }
 
-.PatternButton__title {
+.pattern-button__title {
   font-size: 40px;
   width: fit-content;
   margin: 0 0 30px;
@@ -66,7 +66,7 @@
   background-size: 100%;
 }
 
-.PatternButton__subtitle {
+.pattern-button__subtitle {
   font-style: italic;
   font-weight: bold;
   font-size: 24px;
@@ -74,7 +74,7 @@
   width: 600px;
 }
 
-.PatternButton__text {
+.pattern-button__text {
   font-size: 18px;
   width: fit-content;
   text-align: start;
@@ -84,7 +84,7 @@
   margin: 20px 0;
 }
 
-.PatternButton__btn {
+.pattern-button__btn {
   margin-top: 30px;
   padding: 1em 1.5em;
   cursor: pointer;
@@ -104,7 +104,7 @@
   z-index: 0;
 }
 
-.PatternButton__btn:hover::before {
+.pattern-button__btn:hover::before {
   content: "";
   position: absolute;
   top: 0;
@@ -121,20 +121,20 @@
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3), -1px 1px 1px rgba(0, 0, 0, 0.2);
 }
 
-@media screen and (max-width: 850px) {
-  .PatternButton {
+@media screen and (max-width: 900px) {
+  .pattern-button {
     flex-direction: column;
     width: 780px;
     margin: 30px auto;
     border-bottom: 2px dashed #000;
   }
-  .PatternButton__images {
+  .pattern-button__images {
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
     width: fit-content;
     height: min-content;
     margin: 50px 0;
   }
-  .PatternButton__tape {
+  .pattern-button__tape {
     top: -1em;
     left: 26%;
     width: 80px;
@@ -144,71 +144,71 @@
     border-right: 2px dotted rgba(0, 0, 0, 0.1);
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
   }
-  .PatternButton__img {
+  .pattern-button__img {
     width: 350px;
     height: 350px;
   }
-  .PatternButton__title {
+  .pattern-button__title {
     font-size: 35px;
     width: fit-content;
     margin: 0 0 20px;
   }
-  .PatternButton__subtitle {
+  .pattern-button__subtitle {
     font-size: 20px;
     margin: 0;
     width: fit-content;
   }
-  .PatternButton__text {
+  .pattern-button__text {
     font-size: 16px;
     margin: 15px 0;
   }
-  .PatternButton__btn {
+  .pattern-button__btn {
     margin: 20px 0;
     width: 450px;
     height: 80px;
     font-size: 36px;
   }
-  .PatternButton__btn:hover::before {
+  .pattern-button__btn:hover::before {
     border-width: 0 30px 30px 0;
   }
 }
 @media screen and (max-width: 400px) {
-  .PatternButton {
+  .pattern-button {
     flex-direction: column;
     width: 395px;
     margin: 20px auto;
     border-bottom: 2px dashed #000;
   }
-  .PatternButton__images {
+  .pattern-button__images {
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
     margin-bottom: 30px;
   }
-  .PatternButton__img {
+  .pattern-button__img {
     width: 280px;
     height: 280px;
   }
-  .PatternButton__title {
+  .pattern-button__title {
     font-size: 24px;
     width: 350px;
     margin: 0 0 15px;
   }
-  .PatternButton__subtitle {
+  .pattern-button__subtitle {
     font-size: 16px;
     margin: 0;
     width: 340px;
   }
-  .PatternButton__text {
+  .pattern-button__text {
     font-size: 14px;
     width: 340px;
     margin: 10px 0;
   }
-  .PatternButton__btn {
+  .pattern-button__btn {
     margin: 15px 0;
     width: 300px;
     height: 45px;
     font-size: 24px;
   }
-  .PatternButton__btn:hover::before {
+  .pattern-button__btn:hover::before {
     border-width: 0 30px 30px 0;
   }
 }

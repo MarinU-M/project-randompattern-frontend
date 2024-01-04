@@ -1,4 +1,4 @@
-.CardModal {
+.card-modal {
   position: fixed;
   top: 0;
   right: 0;
@@ -11,7 +11,7 @@
   z-index: 1000;
 }
 
-.CardModal__content {
+.card-modal__content {
   background-color: #fff;
   border: solid 1px #000;
   padding: 35px 35px 12px 35px;
@@ -24,7 +24,7 @@
   justify-content: flex-start;
   flex-direction: column;
 }
-.CardModal__close {
+.card-modal__close {
   background-color: #c1f792;
   padding: 10px 15px;
   border: none;
@@ -37,7 +37,7 @@
   cursor: pointer;
 }
 
-.CardModal__close::before {
+.card-modal__close::before {
   position: absolute;
   right: -3px;
   top: 15px;
@@ -51,35 +51,35 @@
   transition: right 0.1s ease-in 0.1s, top 0.1s ease-in 0.1s;
 }
 
-.CardModal__close:hover::before {
+.card-modal__close:hover::before {
   right: -10px;
   top: 20px;
   transition: right 0.5s ease-in 0.2s, top 0.5s ease-in 0.2s;
 }
-.CardModal__image {
+.card-modal__image {
   width: 400px;
   height: 400px;
   margin: 0;
 }
 
-.CardModal__description {
+.card-modal__description {
   width: 400px;
   display: flex;
   justify-content: space-between;
   margin: 20px 0;
 }
 
-.CardModal__title {
+.card-modal__title {
   margin: 0;
   align-self: center;
   font-size: 24px;
 }
 
-.CardModal__shadow {
+.card-modal__shadow {
   position: relative;
   z-index: 1;
 }
-.CardModal__link {
+.card-modal__link {
   background-color: pink;
   color: #000;
   font-weight: bold;
@@ -87,7 +87,7 @@
   padding: 5px 20px 5px 10px;
   text-decoration: none;
 }
-.CardModal__shadow::before {
+.card-modal__shadow::before {
   position: absolute;
   right: -8px;
   top: 10px;
@@ -101,7 +101,7 @@
   transition: right 0.1s ease-in 0.1s, top 0.1s ease-in 0.1s;
 }
 
-.CardModal__shadow:hover::before {
+.card-modal__shadow:hover::before {
   right: -15px;
   top: 18px;
   transition: right 0.5s ease-in 0.2s, top 0.5s ease-in 0.2s;
