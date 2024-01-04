@@ -1,4 +1,4 @@
-import { baseUrl, userName, password } from "./constants";
+import { BASEURL, USERNAME, PASSWORD } from "./constants";
 
 const checkServerResponse = (res) => {
   if (res.ok) {
@@ -9,11 +9,11 @@ const checkServerResponse = (res) => {
 };
 // /patterns.json?ids=10
 const getPatterns = async () => {
-  const res = await fetch(`${baseUrl}/patterns/search.json`, {
+  const res = await fetch(`${BASEURL}/patterns/search.json`, {
     method: "GET",
     headers: {
       "Content-Type": "application/json",
-      authorization: "Basic " + btoa(`${userName}:${password}`),
+      authorization: "Basic " + btoa(`${USERNAME}:${PASSWORD}`),
     },
   });
   return checkServerResponse(res);

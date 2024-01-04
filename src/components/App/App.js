@@ -35,6 +35,20 @@ function App() {
     setActiveModal("");
   };
 
+  // close modal by pressing esc
+  useEffect(() => {
+    if (!activeModal) return;
+    const handleEscClose = (evt) => {
+      if (evt.key === "Escape") {
+        handleCloseModal();
+      }
+    };
+    document.addEventListener("keydown", handleEscClose);
+    return () => {
+      document.removeEventListener("keydown", handleEscClose);
+    };
+  }, [activeModal]);
+
   // get pattern list
   useEffect(() => {
     getPatterns()
