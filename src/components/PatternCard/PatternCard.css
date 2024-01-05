@@ -10,11 +10,6 @@
   flex-direction: column;
 }
 
-.pattern-card__link {
-  text-decoration: none;
-  color: #000;
-}
-
 .pattern-card__tape {
   position: absolute;
   top: -1em;
@@ -48,6 +43,10 @@
   cursor: pointer;
 }
 
+.pattern-card__title {
+  max-width: 300px;
+  text-overflow: ellipsis;
+}
 @media screen and (max-width: 400px) {
   .pattern-card {
     max-width: 340px;

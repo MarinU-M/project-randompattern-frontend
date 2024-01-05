@@ -5,7 +5,7 @@ import crocheting from "../../images/crocheting.jpg";
 import knitting from "../../images/knitting.jpg";
 import yarnball from "../../images/yarnball.svg";
 
-function Main({ onRandom }) {
+function Main({ onRandom, onClick }) {
   // choose random image
   const images = [crocheting, knitting, yarnball];
   const randomImage = onRandom(images, 1);
@@ -37,7 +37,7 @@ function Main({ onRandom }) {
         <Link
           to="/randompattern"
           className="pattern-button__btn"
-          // onClick={onClick}
+          onClick={onClick}
         >
           Need inspo?
         </Link>

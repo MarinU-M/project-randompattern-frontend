@@ -13,8 +13,10 @@ import { getPatterns } from "../../utils/api";
 
 function App() {
   const [items, setItems] = useState([]);
+  const [list, setList] = useState([]);
   const [activeModal, setActiveModal] = useState("");
   const [selectedCard, setSelectedCard] = useState({});
+  const [isError, setIsError] = useState();
 
   const createRandomList = (array, num) => {
     let newArray = [];
@@ -26,6 +28,10 @@ function App() {
     return newArray;
   };
 
+  // choose 3 patterns randomly
+  const createPatternList = () => {
+    setList(createRandomList(items, 3));
+  };
   const handleSelectedCard = (card) => {
     setActiveModal("preview");
     setSelectedCard(card);
@@ -56,7 +62,10 @@ function App() {
         const { patterns } = res;
         setItems(patterns);
       })
-      .catch(console.error);
+      .catch((err) => {
+        setIsError(true);
+        console.error(err);
+      });
   }, []);
 
   return (
@@ -64,13 +73,13 @@ function App() {
       <Header />
       <Switch>
         <Route exact path="/">
-          <Main onRandom={createRandomList} />
+          <Main onRandom={createRandomList} onClick={createPatternList} />
         </Route>
         <Route path="/randompattern">
           <RandomPattern
             onClick={handleSelectedCard}
-            items={items}
-            onRandom={createRandomList}
+            list={list}
+            isError={isError}
           />
         </Route>
       </Switch>
