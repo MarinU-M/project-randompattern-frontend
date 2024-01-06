@@ -1,0 +1,40 @@
+.random-pattern {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 1150px;
+  margin: 0 auto;
+  border-bottom: 3px dashed #000;
+  padding: 30px 0;
+}
+
+.random-pattern__title {
+  font-size: 40px;
+  width: fit-content;
+  margin: 0 auto 60px 30px;
+}
+
+.random-pattern__cards {
+  list-style-type: none;
+  margin: 30px auto;
+  padding: 0;
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
+}
+
+@media screen and (max-width: 1150px) {
+  .random-pattern {
+    width: 95%;
+  }
+  .random-pattern__title {
+    font-size: 2rem;
+    margin: 0 auto 30px 20px;
+  }
+  .random-pattern__cards {
+    margin: 30px auto;
+    gap: 60px;
+    flex-direction: column;
+  }
+}

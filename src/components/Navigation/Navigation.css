@@ -1,0 +1,113 @@
+.navigation {
+  padding: 0px;
+  margin: 0 100px 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: fit-content;
+}
+
+.navigation__list {
+  list-style-type: none;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  column-gap: 40px;
+  padding: 0;
+}
+
+.navigation__list-item {
+  background-color: #c1f792;
+  padding: 3%;
+  position: relative;
+  margin: 3px;
+  width: 150px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-content: flex-end;
+  cursor: pointer;
+}
+
+.navigation__list-item::before {
+  position: absolute;
+  right: -3px;
+  top: 15px;
+  z-index: -1;
+  transform: rotate(5deg);
+  width: 70%;
+  height: 70%;
+  background-color: #d0d0d0;
+  content: "";
+  filter: blur(4px);
+  transition: right 0.1s ease-in 0.1s, top 0.1s ease-in 0.1s;
+}
+
+.navigation__list-item:hover::before {
+  right: -30px;
+  top: 25px;
+  transition: right 0.5s ease-in 0.2s, top 0.5s ease-in 0.2s;
+}
+
+.navigation__list-item_Ravelry {
+  background-color: pink;
+}
+.navigation__link {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 20px;
+  font-weight: bold;
+
+  height: fit-content;
+  align-self: center;
+}
+
+.navigation__link:hover {
+  background-size: 100% 100%;
+}
+
+@media screen and (max-width: 1190px) {
+  .navigation {
+    margin: 0 24px;
+  }
+  .navigation__list {
+    column-gap: 20px;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .navigation__list-item {
+    padding: 3%;
+    margin: 3px;
+    width: 100px;
+    height: 50px;
+  }
+  .navigation__link {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 500px) and (min-width: 320px) {
+  .navigation {
+    margin: 0;
+  }
+  .navigation__list {
+    column-gap: 3px;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  .navigation__list-item {
+    padding: 1%;
+    margin: 3px;
+    width: 70px;
+    height: 35px;
+  }
+  .navigation__link {
+    font-size: 0.8rem;
+    line-height: 11px;
+    text-align: center;
+  }
+}

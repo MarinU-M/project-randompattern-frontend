@@ -1,0 +1,134 @@
+.card-modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.card-modal__content {
+  background-color: #fff;
+  border: solid 1px #000;
+  padding: 35px 35px 12px 35px;
+  width: fit-content;
+  max-height: fit-content;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.card-modal__close {
+  background-color: #c1f792;
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  position: absolute;
+  width: fit-content;
+  height: fit-content;
+  top: 20px;
+  right: -30px;
+  cursor: pointer;
+}
+
+.card-modal__close::before {
+  position: absolute;
+  right: -3px;
+  top: 15px;
+  z-index: -1;
+  transform: rotate(5deg);
+  width: 70%;
+  height: 70%;
+  background-color: #000;
+  content: "";
+  filter: blur(4px);
+  transition: right 0.1s ease-in 0.1s, top 0.1s ease-in 0.1s;
+}
+
+.card-modal__close:hover::before {
+  right: -10px;
+  top: 20px;
+  transition: right 0.5s ease-in 0.2s, top 0.5s ease-in 0.2s;
+}
+.card-modal__image {
+  width: 400px;
+  height: 400px;
+  margin: 0;
+}
+
+.card-modal__description {
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.card-modal__title {
+  margin: 0;
+  align-self: center;
+  font-size: 24px;
+}
+
+.card-modal__shadow {
+  position: relative;
+  z-index: 1;
+}
+.card-modal__link {
+  background-color: pink;
+  color: #000;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 5px 20px 5px 10px;
+  text-decoration: none;
+}
+.card-modal__shadow::before {
+  position: absolute;
+  right: -8px;
+  top: 10px;
+  z-index: -1;
+  transform: rotate(5deg);
+  width: 70%;
+  height: 70%;
+  background-color: #d0d0d0;
+  content: "";
+  filter: blur(4px);
+  transition: right 0.1s ease-in 0.1s, top 0.1s ease-in 0.1s;
+}
+
+.card-modal__shadow:hover::before {
+  right: -15px;
+  top: 18px;
+  transition: right 0.5s ease-in 0.2s, top 0.5s ease-in 0.2s;
+}
+
+@media screen and (max-width: 560px) {
+  .card-modal__content {
+    padding: 12px 12px 10px 12px;
+    line-height: 18px;
+  }
+  .card-modal__image {
+    width: 294px;
+    height: 294px;
+  }
+  .card-modal__description {
+    width: 294px;
+    margin: 1rem 0;
+  }
+  .card-modal__title {
+    font-size: 1rem;
+  }
+  .card-modal__link {
+    font-size: 1.2rem;
+    padding: 3px 15px 3px 7px;
+  }
+  .card-modal__close {
+    padding: 8px 12px;
+    top: -30px;
+    right: 15px;
+    cursor: pointer;
+  }
+}

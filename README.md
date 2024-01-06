@@ -1,1 +1,0 @@
-# project-randompattern-frontend

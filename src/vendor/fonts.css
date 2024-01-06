@@ -1,0 +1,31 @@
+@font-face {
+  font-family: "Edu TAS Beginner";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url("./fonts/EduTASBeginner-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Edu TAS Beginner";
+  font-style: normal;
+  font-weight: bold;
+  font-display: swap;
+  src: url("./fonts/EduTASBeginner-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Noto Sans", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-display: swap;
+  src: url("./fonts/NotoSans-VariableFont_wdth\,wght.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Pacifico";
+  font-style: normal;
+  font-weight: bold;
+  font-display: swap;
+  src: url("./fonts/Pacifico-Regular.ttf") format("truetype");
+}
