@@ -1,9 +1,11 @@
 .footer {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
   padding: 0;
-  margin: 0 0 0 100px;
+  margin: 0 auto;
+  width: 1100px;
 }
 
 .footer__copyright {
@@ -22,9 +24,9 @@
   height: 50px;
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 1100px) {
   .footer {
-    margin: 0 auto;
+    width: 700px;
   }
 
   .footer__links {
@@ -37,8 +39,14 @@
   }
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 700px) {
+  .footer {
+    width: 300px;
+  }
   .footer__copyright {
-    font-size: 14px;
+    font-size: 0.8rem;
+  }
+  .footer__links {
+    gap: 15px;
   }
 }

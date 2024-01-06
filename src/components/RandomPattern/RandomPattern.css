@@ -15,9 +15,6 @@
   margin: 0 auto 60px 30px;
 }
 
-.random-pattern__error-text {
-  margin: 0 auto 30px;
-}
 .random-pattern__cards {
   list-style-type: none;
   margin: 30px auto;
@@ -28,4 +25,16 @@
 }
 
 @media screen and (max-width: 1150px) {
+  .random-pattern {
+    width: 95%;
+  }
+  .random-pattern__title {
+    font-size: 2rem;
+    margin: 0 auto 30px 20px;
+  }
+  .random-pattern__cards {
+    margin: 30px auto;
+    gap: 60px;
+    flex-direction: column;
+  }
 }

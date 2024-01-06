@@ -17,8 +17,6 @@
   padding: 35px 35px 12px 35px;
   width: fit-content;
   max-height: fit-content;
-  font-size: 16px;
-  line-height: 20px;
   position: relative;
   display: flex;
   justify-content: flex-start;
@@ -105,4 +103,32 @@
   right: -15px;
   top: 18px;
   transition: right 0.5s ease-in 0.2s, top 0.5s ease-in 0.2s;
+}
+
+@media screen and (max-width: 560px) {
+  .card-modal__content {
+    padding: 12px 12px 10px 12px;
+    line-height: 18px;
+  }
+  .card-modal__image {
+    width: 294px;
+    height: 294px;
+  }
+  .card-modal__description {
+    width: 294px;
+    margin: 1rem 0;
+  }
+  .card-modal__title {
+    font-size: 1rem;
+  }
+  .card-modal__link {
+    font-size: 1.2rem;
+    padding: 3px 15px 3px 7px;
+  }
+  .card-modal__close {
+    padding: 8px 12px;
+    top: -30px;
+    right: 15px;
+    cursor: pointer;
+  }
 }
