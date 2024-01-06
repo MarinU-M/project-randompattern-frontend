@@ -23,7 +23,7 @@
   font-family: "Pacifico", cursive;
   margin: 0;
   text-align: left;
-  font-size: 48px;
+  font-size: 3.2rem;
   width: fit-content;
   align-self: center;
   text-decoration: none;
@@ -37,34 +37,36 @@
   align-self: flex-end;
 }
 
-@media screen and (max-width: 850px) {
-  .header {
-    height: 90px;
-  }
-  .header__titles {
-    gap: 5px;
-    margin: auto auto auto 50px;
-    flex-direction: column;
-  }
-  .header__title {
-    font-size: 30px;
-  }
+@media screen and (max-width: 1200px) {
   .header__subtitle {
-    font-size: 16px;
+    font-size: 1.2rem;
   }
 }
-@media screen and (max-width: 400px) {
-  .header {
-    height: 70px;
-  }
+
+@media screen and (max-width: 850px) {
   .header__titles {
-    margin: 0 0 0 20px;
     flex-direction: column;
+    gap: 0.3em;
+    align-self: center;
+    margin: auto auto auto 80px;
   }
   .header__title {
-    font-size: 24px;
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 460px) {
+  .header {
+    height: 80px;
+  }
+  .header__titles {
+    gap: 0.2em;
+    align-self: center;
+    margin-left: 30px;
+  }
+  .header__title {
+    font-size: 1.8rem;
   }
   .header__subtitle {
-    font-size: 12px;
+    font-size: 1rem;
   }
 }

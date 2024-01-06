@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 1300px;
+  width: 1150px;
   margin: 0 auto;
   border-bottom: 3px dashed #000;
   padding: 30px 0;
@@ -27,42 +27,5 @@
   flex-direction: row;
 }
 
-@media screen and (max-width: 850px) {
-  .random-pattern {
-    width: 780px;
-    margin: 50px auto 0;
-    border-bottom: 2px dashed #000;
-  }
-
-  .random-pattern__title {
-    font-size: 35px;
-    width: fit-content;
-    margin: 30px auto 30px;
-  }
-
-  .random-pattern__cards {
-    margin: 20px auto;
-    gap: 35px;
-    flex-direction: column;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .random-pattern {
-    width: 395px;
-    margin: 70px auto 0;
-    border-bottom: 2px dashed #000;
-  }
-
-  .random-pattern__title {
-    font-size: 24px;
-    width: fit-content;
-    margin: 30px auto 20px;
-  }
-
-  .random-pattern__cards {
-    margin: 20px auto;
-    gap: 35px;
-    flex-direction: column;
-  }
+@media screen and (max-width: 1150px) {
 }
